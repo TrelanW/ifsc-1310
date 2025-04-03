@@ -18,7 +18,11 @@ html {
     margin: 40px auto;
   }
 
+/*---------Responsive Images--------*/
 
+img{
+  max-width:100%;
+}
 
   body {
     font-family: "Oswald", serif;
@@ -101,6 +105,79 @@ html {
     border-left: 7.5px solid #3B638B;
     padding: 5px 0 5px 10px;
   }
+
+  #blog{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:30px;
+    border-top:1px solid #f35a5a;
+    padding-top:40px;
+  }
+  
+  #blog article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    padding:10px;
+    font-size:.8rem;
+    border-radius:4px;
+    transition: .4px;
+  }
+
+  #blog article .post:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  }
+
+  figure{
+    margin:0;
+  }
+
+  figcaption,time{
+    text-transform:uppercase;
+    font-size:.6rem;
+  }
+
+  #blog article.post a{
+    color: #3B638B;
+  }
+
+  aside[role="complementary"]{
+    background-color: #172635;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+
+  aside .container{
+    display:flex;
+    flex-direction: row;
+    gap:40px;
+  }
+
+  aside .containter a{
+    color:#ffffff;
+  }
+
+  aside .container a:last-child{
+    display:block;
+    text-align:right;
+  }
+  
+  aside article footer{
+    display:none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media screen and (max-width:560px){
 
