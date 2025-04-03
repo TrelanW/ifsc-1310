@@ -152,15 +152,15 @@ img{
     gap:40px;
   }
 
-  aside .containter a{
+  aside .container a{
     color:#ffffff;
   }
-
+  
   aside .container a:last-child{
     display:block;
     text-align:right;
   }
-  
+
   aside article footer{
     display:none;
   }
