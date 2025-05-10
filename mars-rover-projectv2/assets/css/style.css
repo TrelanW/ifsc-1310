@@ -18,7 +18,8 @@ html {
 
   .nasa-logo {
   float:left;
-  height: 60px;
+  width: 115px;
+  height: auto;
   margin-right: 15px;
   vertical-align: middle;
 }
@@ -43,15 +44,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: #F2EC99;
     text-align: center;
     text-shadow: 1px 1px #000;
-    /*long form*/
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    /*Single value short hand*/
-    padding: 40px;
-    /* T,R,B,L */
-    padding: 20px 40px 20px 40px;
     /* Two Value Top/Bottom / L/R */
     padding: 20px 40px;
   }
@@ -125,6 +117,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   text-align: center;
 }
 
+#blog article.post {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
 #blog .blog-heading {
   color: #D94141;
   margin-bottom: 20px;
@@ -168,7 +165,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size:.6rem;
   }
 
-  #blog article.post a{
+  #blog article.post h2{
     color: #F2EC99;
   }
 
@@ -177,7 +174,33 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-bottom: 1px dotted #F2A285;
   }
 
+  #timeline h2{
+    color:#D94141;
+    border-bottom: 1px dotted #F2A285;
+  }
 
+ .timeline {
+  border-left: 3px solid #D94141;
+  margin: 30px 0;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #D94141;
+  border-radius: 50%;
+}
 
 
 
